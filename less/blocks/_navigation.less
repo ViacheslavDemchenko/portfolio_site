@@ -1,0 +1,123 @@
+.menu {
+	top: 51px;
+	left: 0;
+	right: 0;
+	font-family: 'Noto Sans';
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+
+	@media (min-width: 768px) {
+		position: absolute;
+	}
+
+	@media (min-width: 1200px) {
+		position: absolute;
+		font-size: 22px;
+	}
+
+	&__toggle {
+		position: absolute;
+		z-index: 2;
+		top: 23px;
+		right: 16px;
+		display: block;
+		font-size: 38px;
+
+		@media (min-width: 768px) {
+			display: none;
+		}
+
+		&--fixed {
+			position: fixed;
+		}
+	}
+
+	&__list {
+		position: fixed;
+		top: 6px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		display: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		list-style: none;
+		background-color: rgba(11, 81, 136, .95);
+
+		@media (min-width: 768px) {
+			position: absolute;
+			display: inline-block;
+		}
+
+		@media (min-width: 1200px) {
+			top: 1px;
+		}
+
+		&__item {
+			display: block;
+			margin: 0 0 40px;
+			padding: 0;
+
+			@media (min-width: 768px) {
+				display: inline-block;
+
+				&:last-child {
+					margin-right: -35px;
+	    			letter-spacing: 0.1em;
+				}
+
+				&:first-child {
+					margin-right: 49px;
+   			 		letter-spacing: 0.1em;
+				}
+
+				&:nth-child(2) {
+					margin-right: 46px;
+   			 		letter-spacing: 0.1em;
+				}
+			}
+
+			@media (min-width: 1200px) {
+				display: inline-block;
+
+				&:last-child {
+					margin-right: 1px;
+	    			letter-spacing: 0.1em;
+				}
+
+				&:first-child {
+					margin-right: 100px;
+   			 		letter-spacing: 0.1em;
+				}
+
+				&:nth-child(2) {
+					margin-right: 113px;
+   			 		letter-spacing: 0.1em;
+				}
+			}
+		}
+
+		&__link {
+			color: #FFF;
+			text-decoration: none;
+			transition: all .3s ease-in-out;
+
+			&:hover,
+			&:focus, 
+			&:active {
+				color: @yellow;
+				text-decoration: none;
+			}
+		}
+
+		&--open {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}

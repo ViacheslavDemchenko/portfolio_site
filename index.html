@@ -6,12 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- Titles -->
-	<title>Portfolio</title>
+	<title>Персональный сайт-портфолио - Вячеслав Демченко</title>
 	<meta name="keywords" content="Ключевые слова...">
     <meta name="description" content="Описание страницы...">
 
 	<!-- Syles -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/noto-webfont/noto.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- FavIcons -->
@@ -32,12 +34,52 @@
 	    <p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a>.</p>
 	<![endif]-->
 
-	<div class="block">
-		Шапка страницы
-	</div>
+	<!-- Шапка -->
+	<header class="header">
+		<div class="header__inner">
+
+			<nav class="menu">
+				<div class="menu__toggle menu__toggle--fixed">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<ul class="menu__list">
+					<li class="menu__list__item">
+						<a href="#resume" class="menu__list__link">резюме</a>
+					</li>
+					<li class="menu__list__item">
+						<a href="#portfolio" class="menu__list__link">портфолио</a>
+					</li>
+					<li class="menu__list__item">
+						<a href="#contacts" class="menu__list__link">контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="header__centered-content">
+				<div class="user-photo user-photo--shadow">
+					<img src="usercontent/img/photo-small.jpeg" alt="Вячеслав Демченко">
+				</div>
+				<h1 class="header__title">Вячеслав Демченко</h1>
+				<h2 class="header__subtitle">HTML верстальщик сайтов</h2>
+			</div>
+
+			<a href="#resume" class="mouse_scroll PageScroll2id">
+				<div class="mouse">
+					<div class="wheel"></div>
+				</div>
+				<div class="lines">
+					<span class="m_scroll_arrows unu"></span>
+					<span class="m_scroll_arrows doi"></span>
+					<span class="m_scroll_arrows trei"></span>
+				</div>
+			</a>
+
+		</div>
+	</header>
+	<!-- // Шапка -->
 
 	<!-- Резюме -->	
-	<div class="container">
+	<div id="resume" class="container">
 		<div class="row">
 
 			<!-- Фотография пользователя -->
@@ -81,8 +123,7 @@
 	<div class="line"></div>
 
 	<!-- Портфолио -->
-
-	<div class="container">
+	<div id="portfolio" class="container">
 
 		<div class="block">
 			Портфолио
@@ -144,8 +185,7 @@
 	<!-- // Портфолио -->
 
 	<!-- Контакты -->
-
-		<div class="block-bg">
+		<div id="contacts" class="block-bg">
 			<div class="container">
 
 				<div class="row">
@@ -200,7 +240,9 @@
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 	<script src="js/main.js"></script>
+	<!-- <script src="js/navigation.js"></script> -->
 
 </body>
 </html>
