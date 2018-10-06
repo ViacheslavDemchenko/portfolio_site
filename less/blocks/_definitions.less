@@ -1,0 +1,52 @@
+.definition-list {
+	margin: 0 0 33px;
+	padding: 0;
+	list-style: none;
+
+	@media (min-width: 768px) {
+		margin: 0 0 36px;
+	}
+
+	@media (min-width: 1200px) {
+		width: 95%;
+		margin: 0 0 33px;
+	}
+
+	// &:first-child {
+	// 	@media (min-width: 1200px) {
+	// 		margin: 0 0 33px;
+	// 	}
+	// }
+
+	&--mb-15 {
+		margin: 0 0 15px;
+	}
+
+	&__def--pl {
+		@media (min-width: 1200px) {
+			padding-left: 34px;
+		}
+	}
+
+	&__item {
+		margin: 0 0 13px;
+		padding: 0;
+	}
+
+	&__def {
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 26px;
+		color: @blueHeading;
+		text-transform: uppercase;
+	}
+
+	&__desc {
+		font-size: 14px;
+		line-height: 26px;
+
+		@media (min-width: 768px) {
+			font-size: 16px;
+		}
+	}
+}

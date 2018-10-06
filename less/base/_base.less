@@ -15,12 +15,63 @@ body {
 }
 
 p {
+	margin: 0 0 6px;
 	font-size: 14px;
-	line-height: 24px;
-	color: #777;
+	line-height: 22px;
+	color: #000;
+
+	@media (min-width: 768px) {
+		font-size: 16px;
+		line-height: 27px;
+	}
+
 }
 
+.lh-29 {
+	@media (min-width: 768px) {
+		line-height: 29px;
+	}
+}
 
+.hidden-text {
+	display: block;
+	width: 93%;
+
+	@media (min-width: 1200px) {
+		display: none;
+	}
+}
+
+.visible-text {
+	display: none;
+
+	@media (min-width: 1200px) {
+		display: block;
+	}
+}
+
+.pr--13 {
+
+	@media (min-width: 768px) {
+		padding-right: 13px;
+	}
+
+	@media (min-width: 1200px) {
+		padding-right: 15px;
+	}
+}
+
+.width--90 {
+	@media (min-width: 768px) {
+		width: 90%;
+	}
+}
+
+.ml--10 {
+	@media (min-width: 1200px) {
+		margin-left: -72px;
+	}
+}
 
 .block {
 	background: #FFDB4C;
