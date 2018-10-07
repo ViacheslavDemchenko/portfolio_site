@@ -141,6 +141,13 @@ p {
     margin-left: -72px;
   }
 }
+@media (min-width: 1200px) {
+  .name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+}
 .block {
   background: #FFDB4C;
   padding: 20px;
