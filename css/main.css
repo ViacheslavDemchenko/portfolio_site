@@ -580,6 +580,7 @@ p {
   font-weight: 700;
   color: #FFF;
   border-radius: 60px;
+  border: none;
   background-color: #0052c2;
   -webkit-box-shadow: 0 3px 15px 0 rgba(0, 82, 194, 0.5);
           box-shadow: 0 3px 15px 0 rgba(0, 82, 194, 0.5);
