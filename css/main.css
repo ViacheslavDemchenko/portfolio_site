@@ -498,6 +498,22 @@ p {
     padding-bottom: 90px;
   }
 }
+.section--pd-smaller {
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .section--pd-smaller {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .section--pd-smaller {
+    padding-top: 65px;
+    padding-bottom: 67px;
+  }
+}
 .section--bottom-line {
   border-bottom: 1px solid #E9EFF3;
 }
@@ -506,6 +522,13 @@ p {
     background-image: url("../img/bg/laptop.png");
     background-repeat: no-repeat;
     background-position: right 70%;
+  }
+}
+@media (min-width: 1500px) {
+  .section--bg-gear {
+    background-image: url("../img/bg/gear.png");
+    background-repeat: no-repeat;
+    background-position: left 80%;
   }
 }
 .heading {
@@ -519,6 +542,10 @@ p {
     margin: 0 0 25px;
     font-size: 42px;
   }
+}
+.heading--center {
+  margin: 0 0 27px;
+  text-align: center;
 }
 .heading--medium {
   margin: 20px 0 19px;
@@ -595,6 +622,60 @@ p {
 .button .fa {
   margin-right: 5px;
   font-size: 18px;
+}
+.filter {
+  padding-top: 19px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .filter {
+    padding-top: 8px;
+    margin-bottom: 50px;
+  }
+}
+.filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.filter-list__item {
+  margin: 0 0 9px;
+  padding: 0;
+  display: block;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .filter-list__item {
+    margin-right: 0;
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .filter-list__item {
+    margin-right: 15px;
+  }
+  .filter-list__item:last-child {
+    margin-right: 0;
+  }
+}
+.filter-list__button {
+  display: inline-block;
+  padding: 12px 31px 15px;
+  color: #CECECE;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.filter-list__button:hover {
+  color: #000;
+}
+.filter-list__button--active {
+  padding: 10px 29px 13px;
+  border: 2px solid #0052c2;
+  color: #000;
 }
 .header {
   position: relative;

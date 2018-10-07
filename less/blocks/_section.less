@@ -12,6 +12,21 @@
 		padding-bottom: 90px;
 	}
 
+	&--pd-smaller {
+		padding-top: 30px;
+   	 	padding-bottom: 35px;
+
+   	 	@media (min-width: 768px) {
+			padding-top: 50px;
+    		padding-bottom: 60px;
+	}
+
+		@media (min-width: 1200px) {
+			padding-top: 65px;
+    		padding-bottom: 67px;
+		}
+	}
+
 	&--bottom-line {
 		border-bottom: 1px solid #E9EFF3;
 	}
@@ -21,6 +36,14 @@
 				background-image: url("../img/bg/laptop.png");
 				background-repeat: no-repeat;
 				background-position: right 70%;
+			}
+		}
+
+		@media (min-width: 1500px) {
+			&--bg-gear {
+				background-image: url("../img/bg/gear.png");
+				background-repeat: no-repeat;
+    			background-position: left 80%;
 			}
 		}
 }
