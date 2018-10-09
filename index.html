@@ -177,169 +177,137 @@
 		<div class="container">
 
 			<h2 class="heading heading--center">Мои работы</h2>
-			<div class="filter">
-				<ul class="filter-list">
-					<li class="filter-list__item">
-						<span class="filter-list__button filter-list__button--active">все</span>
+
+			<div class="filter-block">
+				<ul class="filter-block__block">
+					<li class="filter-block__element">
+						<span class="filter-block__button filter-block__button--active filter" data-filter="all">Все</span>
 					</li>
-					<li class="filter-list__item">
-						<span class="filter-list__button">html+css</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".html-css">HTML+CSS</span>
 					</li>
-					<li class="filter-list__item">
-						<span class="filter-list__button">bootstrap</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".bootstrap">Bootstrap</span>
 					</li>
-					<li class="filter-list__item">
-						<span class="filter-list__button">учебные</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".tutorial">Учебные</span>
 					</li>
-					<li class="filter-list__item">
-						<span class="filter-list__button">на заказ</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".payed">На заказ</span>
 					</li>
 				</ul>
 			</div>
 
-			<!-- Работы первый ряд -->
-			<div class="row">
+			<div class="row" id="portfolio-projects">
 
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix html-css tutorial">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-							
-							<div class="portfolio-item__image__hover">
+						<div class="portfolio-item__image">
+							<a href="#" class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
-							</div>
-
-								<img src="usercontent/img/project_organica.jpg" alt="Учебный макет Organica">
-							
-						</a>
+							</a>
+							<img src="usercontent/img/project_organica.jpg">
+						</div>
 						<div class="portfolio-item__title">
 							<a href="#">Учебный макет Organica</a>
 						</div>
-
-						<p class="portfolio-item__description">
+						<div class="portfolio-item__description">
 							Верстка одностраничного сайта по PSD макету.
-						</p>
+						</div>
 					</div>
 				</div>
 
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix bootstrap tutorial">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-							
-							<div class="portfolio-item__image__hover">
+						<div class="portfolio-item__image">
+							<a href="#" class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
-							</div>
-
-								<img src="usercontent/img/project_apollo.jpg" alt="Учебный макет Аполло">
-							
-						</a>
+							</a>
+							<img src="usercontent/img/project_apollo.jpg" alt="Учебный макет Аполло">
+						</div>
 						<div class="portfolio-item__title">
 							<a href="#">Учебный макет Аполло</a>
 						</div>
-
-						<p class="portfolio-item__description">
-							Верстка лендинга хостинг компании.
-							Мобильная адаптивность.
-						</p>
+						<div class="portfolio-item__description">
+							Верстка лендинга хостинг компании. Мобильная адаптивность.
+						</div>
 					</div>
 				</div>
 
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix bootstrap tutorial">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-							
-							<div class="portfolio-item__image__hover">
+						<div class="portfolio-item__image">
+							<a href="#" class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
-							</div>
-
-								<img src="usercontent/img/project_portfolio.jpg" alt="Личный сайт портфолио">
-							
-						</a>
+							</a>
+							<img src="usercontent/img/project_portfolio.jpg" alt="Личный сайт портфолио">
+						</div>
 						<div class="portfolio-item__title">
 							<a href="#">Личный сайт портфолио</a>
 						</div>
-
-						<p class="portfolio-item__description">
+						<div class="portfolio-item__description">
 							Верстка личного сайта портфолио на котором вы сейчас находитесь.
-						</p>
+						</div>
 					</div>
 				</div>
 
-			</div>
-			<!-- // Работы первый ряд -->
-
-			<!-- Работы второй ряд -->
-			<div class="row">
-
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix html-css payed">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-							
-							<div class="portfolio-item__image__hover">
+						<div class="portfolio-item__image">
+							<a href="#" class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
-							</div>
-
-								<img src="usercontent/img/project_auto.jpg" alt="Промо сайт автомобиля">
-							
-						</a>
+							</a>
+							<img src="usercontent/img/project_auto.jpg" alt="Промо сайт автомобиля">
+						</div>
 						<div class="portfolio-item__title">
 							<a href="#">Промо сайт автомобиля</a>
 						</div>
-
-						<p class="portfolio-item__description">
+						<div class="portfolio-item__description">
 							Верстка одностраничного сайта по PSD макету.
-						</p>
+						</div>
 					</div>
 				</div>
 
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix bootstrap payed">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-							
-							<div class="portfolio-item__image__hover">
+						<div class="portfolio-item__image">
+							<a href="#" class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
-							</div>
-
-								<img src="usercontent/img/project_moto.jpg" alt="Магазин мотоциклов">
-							
-						</a>
+							</a>
+							<img src="usercontent/img/project_moto.jpg" alt="Магазин мотоциклов">
+						</div>
 						<div class="portfolio-item__title">
 							<a href="#">Магазин мотоциклов</a>
 						</div>
-
-						<p class="portfolio-item__description">
+						<div class="portfolio-item__description">
 							Верстка лендинга для компании Indian Motorcycles.
-						</p>
+						</div>
 					</div>
 				</div>
 
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix html-css payed">
 					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-							
-							<div class="portfolio-item__image__hover">
+						<div class="portfolio-item__image">
+							<a href="#" class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
-							</div>
-
-								<img src="usercontent/img/project_music.jpg" alt="Магазин аудиотехники">
-							
-						</a>
+							</a>
+							<img src="usercontent/img/project_music.jpg" alt="Магазин аудиотехники">
+						</div>
 						<div class="portfolio-item__title">
 							<a href="#">Магазин аудиотехники</a>
 						</div>
-
-						<p class="portfolio-item__description">
+						<div class="portfolio-item__description">
 							Верстка страниц для магазина винтажной аудиотехники.
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		<!-- // Работы второй ряд -->
 		</div>
 	</div>
 	<!-- // Портфолио -->
@@ -401,8 +369,8 @@
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
 	<script src="js/main.js"></script>
-	<!-- <script src="js/navigation.js"></script> -->
 
 </body>
 </html>

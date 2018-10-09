@@ -623,59 +623,60 @@ p {
   margin-right: 5px;
   font-size: 18px;
 }
-.filter {
-  padding-top: 19px;
-  margin-bottom: 20px;
+.filter-block {
   font-size: 16px;
   font-weight: 700;
-  text-align: center;
+  text-transform: uppercase;
+  padding-top: 19px;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .filter {
+  .filter-block {
     padding-top: 8px;
     margin-bottom: 50px;
   }
 }
-.filter-list {
+.filter-block__block {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
+  text-align: center;
 }
-.filter-list__item {
-  margin: 0 0 9px;
+.filter-block__element {
+  margin: 0 0 9;
   padding: 0;
   display: block;
-  text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  .filter-list__item {
-    margin-right: 0;
+  .filter-block__element {
+    margin-right: 0px;
     display: inline-block;
   }
 }
 @media (min-width: 1200px) {
-  .filter-list__item {
+  .filter-block__element {
     margin-right: 15px;
   }
-  .filter-list__item:last-child {
+  .filter-block__element:last-child {
     margin-right: 0;
   }
 }
-.filter-list__button {
+.filter-block__button {
   display: inline-block;
-  padding: 12px 31px 15px;
   color: #CECECE;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  padding: 12px 31px 15px;
 }
-.filter-list__button:hover {
+.filter-block__button:hover {
   color: #000;
 }
-.filter-list__button--active {
+.filter-block__button--active {
   padding: 10px 29px 13px;
-  border: 2px solid #0052c2;
   color: #000;
+  border: 2px solid #0052c2;
+}
+#portfolio-projects .mix {
+  display: none;
 }
 .portfolio-item {
   margin: 0 auto;
