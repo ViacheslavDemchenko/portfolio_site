@@ -48,4 +48,13 @@ $(document).ready(function() {
 
 	$('#portfolio-projects').mixItUp();
 
+
+	$('.fancybox').fancybox({
+        helpers: {
+            overlay: {
+                locked: false
+             }
+        }
+    });
+
 });
