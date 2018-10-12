@@ -314,41 +314,106 @@
 	<!-- // Портфолио -->
 
 	<!-- Контакты -->
-		<div id="contacts" class="block-bg">
+		<div id="contacts" class="contacts section section--pd-smaller section--bg-cloud">
 			<div class="container">
 
 				<div class="row">
 
 					<div class="col-sm-6">
-						<div class="block">
-							Контакты - текст
+						<h3 class="heading heading--light">Контакты</h3>
+						<div class="contacts__description">
+							<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом — я к вашим услугам.</p>
 						</div>
+						
 						<div class="row">
 
 							<div class="col-lg-6">
-								<div class="block">
-									Email
-								</div>
+
+								<ul class="definition-list">
+									<li class="definition-list__item">
+										<div class="definition-list__def definition-list__def--light definition-list__def--bigger">
+											Email
+										</div>
+										<div class="definition-list__desc">
+											<p><a href="mailto:demchenko_slava_@mail.ru">demchenko_slava_@mail.ru</a></p>
+										</div>
+									</li>
+
+									<li class="definition-list__item">
+										<div class="definition-list__def definition-list__def--light definition-list__def--bigger">
+											Skype
+										</div>
+										<div class="definition-list__desc">
+											<p><a href="skype:demchenko_vyacheslav?chat">demchenko_vyacheslav</a></p>
+										</div>
+									</li>
+								</ul>	
+
 							</div>
 								
 							<div class="col-lg-6">
-								<div class="block">
-									Телефон
-								</div>
-							</div>
 
+								<ul class="definition-list">
+									<li class="definition-list__item">
+										<div class="definition-list__def definition-list__def--light definition-list__def--bigger">
+											Телефон
+										</div>
+										<div class="definition-list__desc">
+											<p><a href="tel:+38(050)130-25-30">+38(050)130-25-30</a></p>
+										</div>
+									</li>
+
+									<li class="definition-list__item">
+										<div class="definition-list__def definition-list__def--light definition-list__def--bigger">
+											Адрес
+										</div>
+										<div class="definition-list__desc">
+											<p>ДНР, Донецк</p>
+										</div>
+									</li>
+								</ul>	
+
+							</div>
 						</div>
 
-						<div class="block">
-							Социальные иконки
+						<div>
+							<ul class="definition-list">
+									<li class="definition-list__item">
+										<div class="definition-list__def definition-list__def--light definition-list__def--bigger">
+											Социальные сети
+										</div>
+										<div class="definition-list__desc">
+											<div class="social-icons">
+												<a href="#" class="fa fa-vk" aria-hidden="true"></a>
+												<a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+												<a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+												<a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+												<a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+												<a href="#" class="fa fa-github" aria-hidden="true"></a>
+											</div>
+										</div>
+									</li>
+								</ul>
 						</div>
 
 					</div>
 
 					<div class="col-sm-6">
-						<div class="block">
-							Форма
-						</div>
+						<div class="heading heading--light heading--medium heading--padding-top">Связаться со мной</div>
+						
+						<form class="contact-form">
+							<input type=text class="contact-form__input" name="name" placeholder="Имя">
+							<input type=text class="contact-form__input" name="email" placeholder="Email">
+							<div>
+								<input type=text class="contact-form__input contact-form__input--half-width" name="skype" placeholder="Skype">
+								<input type=text class="contact-form__input contact-form__input--half-width" name="phone" placeholder="Телефон">
+							</div>
+							<div class="contact-form__bg-pencil">
+								<textarea class="contact-form__textarea" placeholder="Ваше сообщение"></textarea>
+							</div>
+							<input type="submit" class="contact-form__submit" name="" value="Отправить">
+
+						</form>
 					</div>
 
 				</div>
@@ -358,11 +423,11 @@
 	<!-- // Контакты -->
 
 	<!-- Копирайт -->
-	<div class="block-bg-copyright">
+	<div class="copyright">
 		<div class="container">
-			<div class="block">
-				Копирайт
-			</div>
+			<p class="copyright__label">© 2018 Вячеслав Демченко</p>
+			<p>Веб-разработчик из Донецка, занимаюсь версткой и созданием сайтов.</p>
+			<p>Этот сайт сделан в рамках прохождения обучения по верстке на курсах от WebCademy.ru</p>
 		</div>
 	</div>
 	<!-- // Копирайт -->
