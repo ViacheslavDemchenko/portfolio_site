@@ -46,6 +46,7 @@
 		text-align: center;
 		list-style: none;
 		background-color: rgba(11, 81, 136, .95);
+		transition: all .3s ease-in-out;
 
 		@media (min-width: 768px) {
 			position: absolute;
@@ -55,6 +56,13 @@
 
 		@media (min-width: 1200px) {
 			top: 1px;
+		}
+
+		&--open {
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    flex-direction: column;
 		}
 
 		&__item {
