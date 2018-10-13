@@ -919,6 +919,29 @@ p {
     background-position: left top;
   }
 }
+label.error {
+  position: relative;
+  display: block;
+  padding: 5px 15px 8px;
+  margin-bottom: 15px;
+  margin-top: 2px;
+  font-weight: 700;
+  background-color: #C62828;
+  border-radius: 8px;
+  color: #FFF;
+}
+label.error::after {
+  position: absolute;
+  content: "";
+  bottom: 100%;
+  left: 20px;
+  margin-left: -12px;
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid #c62828;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+}
 .cmn-toggle-switch {
   position: absolute;
   z-index: 5;

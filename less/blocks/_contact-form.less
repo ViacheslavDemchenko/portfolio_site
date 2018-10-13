@@ -103,3 +103,29 @@
 		}
 	}
 }
+label.error {
+	position: relative;
+	display: block;
+	padding: 5px 15px 8px;
+	margin-bottom: 15px;
+	margin-top: 2px;
+	font-weight: 700;
+	background-color: #C62828;
+	border-radius: 8px;
+	color: #FFF;
+
+	@cornerSize: 12px;
+
+	&::after {
+		position: absolute;
+		content: "";
+		bottom: 100%;
+		left: 20px;
+		margin-left: -@cornerSize;
+		width: 0;
+		height: 0;
+		border-bottom: @cornerSize solid #C62828;
+		border-right: @cornerSize solid transparent;
+		border-left: @cornerSize solid transparent;
+	}
+}
